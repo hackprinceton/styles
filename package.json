@@ -1,0 +1,15 @@
+{
+  "name": "hp-styles",
+  "version": "1.0.0",
+  "description": "Common web styles for HackPrinceton.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princetoneclub/hp-styles.git"
+  },
+  "author": "HackPrinceton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/princetoneclub/hp-styles/issues"
+  },
+  "homepage": "https://github.com/princetoneclub/hp-styles#readme"
+}
