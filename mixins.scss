@@ -1,7 +1,7 @@
 // Custom mixins
 // Do not put anything other than mixins into this file, since it is included from many other stylesheets.
 
-@import '{}/imports/ui/stylesheets/settings';
+@import 'settings';
 
 @mixin font-heading {
   font-family: $header-font-family;
