@@ -5,7 +5,7 @@ Shared Sass stylesheets for HackPrinceton websites. This package may be loaded i
 Use this method if installing into a GitHub Pages site.
 
 ```
-git submodule add git@github.com:princetoneclub/hp-styles.git _sass/hp-styles
+git submodule add https://github.com/princetoneclub/hp-styles.git _sass/hp-styles
 ```
 
 This installs a copy of the repo at `_sass/hp-styles`. Import these styles using the following lines:
