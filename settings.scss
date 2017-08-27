@@ -64,16 +64,13 @@
 // Colors here are copied into $foundation-palette and are thus
 // accessible through get-color(color-name)
 
-// Spring 2017 Colors
+// Fall 2017 Colors
 // Defined in order of design guidelines
-$hp-pink-1: #f0dcee;
-$hp-pink-2: #f2aac7;
-$hp-pink-3: #ff94d0;
-$hp-light-gray: #e2e2e2;
-$hp-periwinkle-1: #d6d6ed;
-$hp-periwinkle-2: #bfd2ef;
-$hp-baby-blue: #94dcff;
-$hp-dark-gray: #515151;
+$hp-orange-1: #f6916b;
+$hp-orange-2: #f16248;
+$hp-brown-1: #771f00;
+$hp-brown-2: #811400;
+$hp-cream: #f6f7eb;
 
 
 // {{ 1. Global }}
@@ -83,20 +80,20 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-pink-3,
-  secondary: $hp-pink-2,
+  primary: $hp-orange-1,
+  secondary: $hp-orange-2,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: $hp-light-gray;
+$light-gray: $hp-cream;
 $medium-gray: #cacaca;
-$dark-gray: $hp-dark-gray;
+$dark-gray: #545454;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $hp-periwinkle-1;
+$body-background: $hp-cream;
 $body-font-color: $black;
-$body-font-family: 'Inconsolata', monospace;
+$body-font-family: 'Abel', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -174,7 +171,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-baby-blue, $lightness: -14%);
+$anchor-color: scale-color($hp-orange-2, $lightness: -14%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -276,10 +273,10 @@ $breadcrumbs-item-slash: true;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $hp-dark-gray;
+$button-background: $hp-brown-1;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $hp-dark-gray;
+$button-color-alt: $hp-brown-2;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -449,7 +446,7 @@ $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $light-gray;
+$menu-item-background-hover: $hp-orange-2;
 $menu-border: $light-gray;
 
 // {{ 23. Meter }}
@@ -623,11 +620,11 @@ $thumbnail-radius: $global-radius;
 // -------------------
 
 $titlebar-background: $white;
-$titlebar-color: $dark-gray;
+$titlebar-color: $hp-orange-1;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $dark-gray;
-$titlebar-icon-color-hover: $black;
+$titlebar-icon-color: $titlebar-color;
+$titlebar-icon-color-hover: $hp-orange-2;
 $titlebar-icon-spacing: 0.25rem;
 
 // {{ 36. Tooltip }}
@@ -647,7 +644,7 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $light-gray;
+$topbar-background: $hp-brown-2;
 $topbar-height: rem-calc(50); // custom
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
