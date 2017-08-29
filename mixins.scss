@@ -5,12 +5,10 @@
 
 @mixin font-heading {
   font-family: $header-font-family;
-  letter-spacing: .1em;
 }
 
 @mixin font-subheading {
   font-family: $header-font-family;
-  letter-spacing: .15em;
 }
 
 @mixin font-body {
