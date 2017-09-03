@@ -5,7 +5,7 @@
 
 @mixin font-heading {
   font-family: $header-font-family;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
 }
 
 @mixin font-subheading {
