@@ -28,3 +28,24 @@ This installs this repo as a NPM package. Import these styles into a Meteor site
 @import '{}/node_modules/hp-styles/settings';
 @import '{}/node_modules/hp-styles/mixins';
 ```
+
+On Rails, the following needs to be added to the Gemfile:
+
+```ruby
+gem 'browserify-rails', '~> 4.2'
+gem 'foundation-rails', '~> 5.5'
+```
+
+Then, run the following:
+
+```sh
+$ bin/rails generate foundation:install
+$ bin/rails yarn:install
+```
+
+And add the following to `app/assets/stylesheets/application.scss`:
+
+```scss
+@import "hp-styles/settings";
+@import "foundation";
+```
