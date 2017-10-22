@@ -77,6 +77,9 @@ $hp-twitter: #00a99d;
 // {{ 1. Global }}
 // ---------------
 
+// Global tolerance for color pick contrast.
+$global-color-pick-contrast-tolerance: 0 !default;
+
 $global-font-size: 115%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
