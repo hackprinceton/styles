@@ -64,14 +64,16 @@
 // Colors here are copied into $foundation-palette and are thus
 // accessible through get-color(color-name)
 
-// Fall 2017 Colors
+// Spring 2018 Colors
 // Defined in order of design guidelines
-$hp-orange-1: #f6916b;
-$hp-orange-2: #f16248;
-$hp-brown-1: #771f00;
-$hp-brown-2: #811400;
-$hp-cream: #f6f7eb;
-$hp-twitter: #00a99d;
+$hp-scarlet: #f45243;
+$hp-turquoise: #00a1a8;
+$hp-yellow: #ffbb0e;
+$hp-violet: #bc3760;
+$hp-black: #07394a;
+$hp-brown: #7b4d1e;
+$hp-white: #ffffff;
+$hp-beige: #dcc9c5;
 
 
 // {{ 1. Global }}
@@ -84,20 +86,20 @@ $global-font-size: 115%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-orange-1,
-  secondary: $hp-orange-2,
-  success: #3adb76,
+  primary: $hp-scarlet,
+  secondary: $hp-turquoise,
+  success: $hp-turquoise,
   warning: #ffae00,
-  alert: #cc4b37,
+  alert: $hp-scarlet,
 );
-$light-gray: $hp-cream;
+$light-gray: $hp-beige;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$black: #0a0a0a;
+$black: $hp-black;
 $white: #fefefe;
-$body-background: $hp-cream;
+$body-background: $hp-beige;
 $body-font-color: $black;
-$body-font-family: 'Abel', sans-serif;
+$body-font-family: 'Franklin Gothic', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -175,7 +177,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-orange-2, $lightness: -14%);
+$anchor-color: scale-color($hp-turquoise, $lightness: -14%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -277,10 +279,10 @@ $breadcrumbs-item-slash: true;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $hp-brown-1;
+$button-background: $hp-turquoise;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $hp-brown-2;
+$button-color-alt: $hp-turquoise;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -450,7 +452,7 @@ $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $hp-orange-2;
+$menu-item-background-hover: $hp-violet;
 $menu-border: $light-gray;
 
 // {{ 23. Meter }}
@@ -624,11 +626,11 @@ $thumbnail-radius: $global-radius;
 // -------------------
 
 $titlebar-background: $white;
-$titlebar-color: $hp-orange-1;
+$titlebar-color: $hp-violet;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $titlebar-color;
-$titlebar-icon-color-hover: $hp-orange-2;
+$titlebar-icon-color-hover: $hp-violet;
 $titlebar-icon-spacing: 0.25rem;
 
 // {{ 36. Tooltip }}
@@ -648,7 +650,7 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-brown-2;
+$topbar-background: $hp-violet;
 $topbar-height: rem-calc(60); // custom
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
