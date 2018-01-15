@@ -82,7 +82,7 @@ $hp-beige: #dcc9c5;
 // Global tolerance for color pick contrast.
 $global-color-pick-contrast-tolerance: 0 !default;
 
-$global-font-size: 115%;
+$global-font-size: 90%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
@@ -99,7 +99,7 @@ $black: $hp-black;
 $white: #fefefe;
 $body-background: scale-color($hp-white, $lightness: -3%);
 $body-font-color: $black;
-$body-font-family: 'Franklin Gothic', sans-serif;
+$body-font-family: "Franklin Gothic", Verdana, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -140,8 +140,8 @@ $block-grid-max: 8;
 // {{ 4. Base Typography }}
 // ------------------------
 
-$header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-family: moon, sans-serif;
+$header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
