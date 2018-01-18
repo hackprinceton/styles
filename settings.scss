@@ -66,10 +66,12 @@
 
 // Spring 2018 Colors
 // Defined in order of design guidelines
+$hp-pink: #d96593;
 $hp-scarlet: #f45243;
 $hp-turquoise: #00a1a8;
 $hp-yellow: #ffbb0e;
 $hp-violet: #bc3670;
+$hp-blue: #0d6b8b;
 $hp-black: #07394a;
 $hp-brown: #7b4d1e;
 $hp-white: #ffffff;
@@ -86,7 +88,7 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-scarlet,
+  primary: $hp-pink,
   secondary: $hp-turquoise,
   success: $hp-turquoise,
   warning: #ffae00,
