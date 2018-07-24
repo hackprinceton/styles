@@ -64,18 +64,14 @@
 // Colors here are copied into $foundation-palette and are thus
 // accessible through get-color(color-name)
 
-// Spring 2018 Colors
+// Fall 2018 Colors
 // Defined in order of design guidelines
-$hp-pink: #d96593;
-$hp-scarlet: #f45243;
-$hp-turquoise: #00a1a8;
-$hp-yellow: #ffbb0e;
-$hp-violet: #bc3670;
-$hp-blue: #0d6b8b;
-$hp-black: #07394a;
-$hp-brown: #7b4d1e;
-$hp-white: #ffffff;
-$hp-beige: #dcc9c5;
+$hp-turquoise: #0abdc6;
+$hp-magenta: #ea00d9;
+$hp-yellow: #ffb33a;
+$hp-black: #091833;
+$hp-violet: #133e7c;
+$hp-blue: #711c91;
 
 
 // {{ 1. Global }}
@@ -88,20 +84,20 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-pink,
-  secondary: $hp-turquoise,
-  success: $hp-turquoise,
+  primary: $hp-turquoise,
+  secondary: $hp-magenta,
+  success: $hp-magenta,
   warning: $hp-yellow,
-  alert: $hp-scarlet,
+  alert: $hp-hp-turquoise,
 );
-$light-gray: $hp-beige;
+$light-gray: $hp-blue;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
 $black: $hp-black;
 $white: #fefefe;
-$body-background: scale-color($hp-white, $lightness: -3%);
+$body-background: scale-color($hp-black, $lightness: -3%);
 $body-font-color: $black;
-$body-font-family: Verdana, sans-serif;
+$body-font-family: EXO2, Verdana, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -179,7 +175,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-turquoise, $lightness: -14%);
+$anchor-color: scale-color($hp-magenta, $lightness: -14%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -282,10 +278,10 @@ $button-font-family: $header-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $hp-turquoise;
+$button-background: $hp-magenta;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $hp-turquoise;
+$button-color-alt: $hp-magenta;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -422,8 +418,8 @@ $input-font-weight: $global-weight-normal;
 $input-background: scale-color($white, $lightness: -1%);
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $hp-beige;
-$input-border-focus: 1px solid $hp-turquoise;
+$input-border: 1px solid $hp-blue;
+$input-border-focus: 1px solid $hp-magenta;
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
@@ -460,7 +456,7 @@ $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $hp-violet;
+$menu-item-background-hover: $hp-yellow;
 $menu-border: $light-gray;
 
 // {{ 23. Meter }}
@@ -633,7 +629,7 @@ $thumbnail-radius: $global-radius;
 // {{ 35. Title Bar }}
 // -------------------
 
-$titlebar-background: $hp-violet;
+$titlebar-background: $hp-yellow;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: normal;
@@ -658,7 +654,7 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-violet;
+$topbar-background: $hp-yellow;
 $topbar-height: rem-calc(60); // custom
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
