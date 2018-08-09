@@ -14,7 +14,7 @@
 @mixin inner-side-shadow(
   $side: bottom,
   $size: 20px,
-  $color: rgba($black, 0.25)
+  $color: rgba($hp-white, 0.25)
 ) {
 
   $helper: round($size * 0.65);
@@ -72,14 +72,14 @@
 
 /// Creates a menu icon with a set width, height, number of bars, and colors. The mixin uses the height of the icon and the weight of the bars to determine spacing. <div class="docs-example-burger"></div>
 ///
-/// @param {Color} $color [$black] - Color to use for the icon.
+/// @param {Color} $color [$hp-white] - Color to use for the icon.
 /// @param {Color} $color-hover [$dark-gray] - Color to use when the icon is hovered over.
 /// @param {Number} $width [20px] - Width of the icon.
 /// @param {Number} $height [16px] - Height of the icon.
 /// @param {Number} $weight [2px] - Height of individual bars in the icon.
 /// @param {Number} $bars [3] - Number of bars in the icon.
 @mixin hamburger(
-  $color: $black,
+  $color: $hp-white,
   $color-hover: $dark-gray,
   $width: 20px,
   $height: 16px,
@@ -144,8 +144,8 @@
 /// Adds a downward-facing triangle as a background image to an element. The image is formatted as an SVG, making it easy to change the color. Because Internet Explorer doesn't support encoded SVGs as background images, a PNG fallback is also included.
 /// There are two PNG fallbacks: a black triangle and a white triangle. The one used depends on the lightness of the input color.
 ///
-/// @param {Color} $color [$black] - Color to use for the triangle.
-@mixin background-triangle($color: $black) {
+/// @param {Color} $color [$hp-white] - Color to use for the triangle.
+@mixin background-triangle($color: $hp-white) {
   $rgb: 'rgb%28#{round(red($color))}, #{round(green($color))}, #{round(blue($color))}%29';
 
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: #{$rgb}'></polygon></svg>");
