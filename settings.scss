@@ -69,11 +69,13 @@
 // Defined in order of design guidelines
 $hp-turquoise: #0abdc6;
 $hp-magenta: #ea00d9;
+$hp-turquoise-light: scale-color($color: $hp-turquoise, $saturation: -20%);
 $hp-yellow: #ffb33a;
 $hp-black: #091833;
-$hp-violet: #133e7c;
-$hp-blue: #711c91;
+$hp-blue: #133e7c;
+$hp-violet: #711c91;
 $hp-white: #fefefe;
+$hp-off-white: scale-color($color: $hp-white, $lightness: -15%);
 
 
 // {{ 1. Global }}
@@ -97,7 +99,7 @@ $medium-gray: #cacaca;
 $dark-gray: #545454;
 $body-background: scale-color($hp-black, $lightness: -3%);
 $body-font-color: $hp-white;
-$body-font-family: 'Exo 2', Verdana, sans-serif;
+$body-font-family: exo2, Verdana, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -114,7 +116,8 @@ $print-transparent-backgrounds: true;
 // --------------------
 
 $breakpoints: (
-  small: 0,
+  tiny: 0,
+  small: 420px,
   medium: 640px,
   large: 1023px,
   xlarge: 1200px,
@@ -138,7 +141,7 @@ $block-grid-max: 8;
 // {{ 4. Base Typography }}
 // ------------------------
 
-$header-font-family: Endless Boss Battle, sans-serif;
+$header-font-family: 'ebb', sans-serif;
 $header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -210,7 +213,8 @@ $abbr-underline: 1px dotted $hp-white;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-color: $hp-magenta;
+$subsubheader-color: $hp-turquoise;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
@@ -274,12 +278,13 @@ $breadcrumbs-item-slash: true;
 // {{ 11. Button }}
 // ----------------
 
-$button-font-family: $header-font-family;
+$button-font-family: $body-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $hp-violet;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background-active: scale-color($hp-magenta, $lightness: -10%);
 $button-color: $hp-white;
 $button-color-alt: $hp-magenta;
 $button-radius: $global-radius;
@@ -320,7 +325,9 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-black;
+$card-background: $hp-blue;
+$card-hover-background: scale-color($color: $hp-blue, $lightness: 10%);
+$card-header-color: $hp-turquoise;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
 $card-border: 1px solid $light-gray;
@@ -410,16 +417,17 @@ $form-label-line-height: 1.8;
 $select-background: $hp-black;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
-$input-color: $hp-white;
+$input-color: $hp-turquoise;
+$input-color-alt: $hp-black;
 $input-placeholder-color: $dark-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
-$input-background: scale-color($hp-black, $lightness: -1%);
-$input-background-focus: $hp-black;
+$input-background: scale-color($hp-white, $lightness: -1%);
+$input-background-focus: $hp-white;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $hp-blue;
-$input-border-focus: 1px solid $hp-magenta;
+$input-border-focus: 2px solid $hp-yellow;
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
@@ -433,10 +441,10 @@ $form-background: #e4e0e0;
 // ---------------
 
 $label-background: $primary-color;
-$label-color: $hp-black;
-$label-color-alt: $hp-white;
+$label-color: $hp-white;
+$label-color-alt: $hp-blue;
 $label-palette: $foundation-palette;
-$label-font-size: 0.8rem;
+$label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
 
@@ -629,7 +637,7 @@ $thumbnail-radius: $global-radius;
 // {{ 35. Title Bar }}
 // -------------------
 
-$titlebar-background: $hp-black;
+$titlebar-background: $hp-white;
 $titlebar-color: $hp-white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: normal;
