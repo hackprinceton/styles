@@ -13,6 +13,15 @@
 @mixin font-subheading {
   font-family: $header-font-family;
   font-weight: bold;
+  color: scale-color($color: $subheader-color, $lightness: -10%);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+@mixin font-subsubheading {
+  font-family: $body-font-family;
+  font-weight: normal;
+  color: scale-color($color: $subsubheader-color, $lightness: -10%);
   letter-spacing: .05em;
   text-transform: uppercase;
 }
