@@ -99,7 +99,7 @@ $medium-gray: #cacaca;
 $dark-gray: #545454;
 $body-background: scale-color($hp-black, $lightness: -3%);
 $body-font-color: $hp-white;
-$body-font-family: exo2, Verdana, sans-serif;
+$body-font-family: 'Exo 2', Verdana, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -141,8 +141,8 @@ $block-grid-max: 8;
 // {{ 4. Base Typography }}
 // ------------------------
 
-$header-font-family: 'ebb', sans-serif;
-$header-font-weight: bold;
+$header-font-family: Endless Boss Battle, sans-serif;
+$header-font-weight: normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
@@ -637,7 +637,7 @@ $thumbnail-radius: $global-radius;
 // {{ 35. Title Bar }}
 // -------------------
 
-$titlebar-background: $hp-white;
+$titlebar-background: $hp-black;
 $titlebar-color: $hp-white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: normal;
@@ -668,3 +668,4 @@ $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+$topbar-font-family: $body-font-family;
