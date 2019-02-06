@@ -67,15 +67,16 @@
 
 // Fall 2018 Colors
 // Defined in order of design guidelines
-$hp-turquoise: #0abdc6;
-$hp-magenta: #ea00d9;
-$hp-turquoise-light: scale-color($color: $hp-turquoise, $saturation: -20%);
-$hp-yellow: #ffb33a;
-$hp-black: #091833;
-$hp-blue: #133e7c;
-$hp-violet: #711c91;
-$hp-white: #fefefe;
-$hp-off-white: scale-color($color: $hp-white, $lightness: -15%);
+$hp-green-light: #C0EF65;
+$hp-red-light: #FF9C94;
+$hp-yellow-light: #FCEA68;
+$hp-orange-light: #FFB980;
+$hp-green: #59A805;
+$hp-red: #e02222;
+$hp-yellow: #E2B700;
+$hp-orange: #F26403;
+$hp-black: #000000;
+$hp-white: #ffffff;
 
 
 // {{ 1. Global }}
@@ -88,18 +89,18 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-turquoise,
-  secondary: $hp-magenta,
-  success: $hp-turquoise,
-  warning: $hp-yellow,
-  alert: $hp-turquoise,
+  primary: $hp-white,
+  secondary: $hp-green,
+  success: $hp-yellow,
+  warning: $hp-red,
+  alert: $hp-orange,
 );
-$light-gray: $hp-blue;
+$light-gray: $hp-orange;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: scale-color($hp-black, $lightness: -3%);
-$body-font-color: $hp-white;
-$body-font-family: 'Exo 2', Verdana, sans-serif;
+$body-background: $hp-white;
+$body-font-color: $hp-green;
+$body-font-family: 'SiliconeRg-Bold', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -178,7 +179,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-magenta, $lightness: -14%);
+$anchor-color: scale-color($hp-white, $lightness: -14%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -213,8 +214,8 @@ $abbr-underline: 1px dotted $hp-white;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $hp-magenta;
-$subsubheader-color: $hp-turquoise;
+$subheader-color: $hp-green;
+$subsubheader-color: $hp-green-light;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
@@ -281,12 +282,13 @@ $breadcrumbs-item-slash: true;
 $button-font-family: $body-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
+$button-border: $hp-orange;
 $button-fill: solid;
-$button-background: $hp-violet;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-background-active: scale-color($hp-magenta, $lightness: -10%);
-$button-color: $hp-white;
-$button-color-alt: $hp-magenta;
+$button-background: $hp-white;
+$button-background-hover: scale-color($hp-orange, $lightness: -15%);
+$button-background-active: scale-color($hp-orange, $lightness: -10%);
+$button-color: $hp-orange;
+$button-color-alt: $hp-orange;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -298,7 +300,7 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.7;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
+$button-transition: $hp-orange-light 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
 
 // {{ 12. Button Group }}
 // ----------------------
@@ -325,9 +327,9 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-blue;
-$card-hover-background: scale-color($color: $hp-blue, $lightness: 10%);
-$card-header-color: $hp-turquoise;
+$card-background: $hp-yellow;
+$card-hover-background: scale-color($color: $hp-yellow, $lightness: 10%);
+$card-header-color: $hp-orange;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
 $card-border: 1px solid $light-gray;
@@ -417,8 +419,8 @@ $form-label-line-height: 1.8;
 $select-background: $hp-black;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
-$input-color: $hp-turquoise;
-$input-color-alt: $hp-black;
+$input-color: $hp-green-light;
+$input-color-alt: $hp-green;
 $input-placeholder-color: $dark-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
@@ -426,8 +428,8 @@ $input-font-weight: $global-weight-normal;
 $input-background: scale-color($hp-white, $lightness: -1%);
 $input-background-focus: $hp-white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $hp-blue;
-$input-border-focus: 2px solid $hp-yellow;
+$input-border: 1px solid $hp-green;
+$input-border-focus: 2px solid $hp-green-light;
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
@@ -442,7 +444,7 @@ $form-background: #e4e0e0;
 
 $label-background: $primary-color;
 $label-color: $hp-white;
-$label-color-alt: $hp-blue;
+$label-color-alt: $hp-green;
 $label-palette: $foundation-palette;
 $label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
@@ -464,7 +466,7 @@ $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $hp-black;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $hp-violet;
+$menu-item-background-hover: $hp-red;
 $menu-border: $light-gray;
 
 // {{ 23. Meter }}
@@ -547,7 +549,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-violet;
+$reveal-background: $hp-green-light;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -589,9 +591,8 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: $hp-blue;
+$table-background: $hp-yellow-light;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
@@ -616,7 +617,7 @@ $tab-color: $primary-color;
 $tab-background-active: $light-gray;
 $tab-active-color: $primary-color;
 $tab-item-font-size: rem-calc(12);
-$tab-item-background-hover: $hp-violet;
+$tab-item-background-hover: $hp-white;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $hp-white;
@@ -662,9 +663,9 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-black;
+$topbar-background: $hp-white;
 $topbar-height: rem-calc(60); // custom
-$topbar-submenu-background: $topbar-background;
+$topbar-submenu-background: $hp-orange;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
