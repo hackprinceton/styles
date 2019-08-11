@@ -216,7 +216,7 @@ $abbr-underline: 1px dotted $hp-white;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $hp-brown;
+$subheader-color: $hp-cyan;
 $subsubheader-color: $hp-cyan;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
@@ -287,8 +287,8 @@ $button-margin: 0 0 $global-margin 0;
 $button-border: $hp-blue;
 $button-fill: solid;
 $button-background: $hp-blue;
-$button-background-hover: scale-color($hp-brown-light, $lightness: -15%);
-$button-background-active: scale-color($hp-brown-light, $lightness: -10%);
+$button-background-hover: scale-color($hp-cyan, $lightness: -15%);
+$button-background-active: scale-color($hp-cyan, $lightness: -10%);
 $button-color: $hp-white;
 $button-color-alt: $hp-blue-light;
 $button-radius: $global-radius;
@@ -367,7 +367,7 @@ $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
-$drilldown-background: $hp-yellow;
+$drilldown-background: $hp-cyan;
 
 // {{ 17. Dropdown }}
 // ------------------
@@ -388,7 +388,7 @@ $dropdown-sizes: (
 // -----------------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $hp-yellow;
+$dropdownmenu-arrow-color: $hp-cyan;
 $dropdownmenu-arrow-padding: 1.75rem;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
