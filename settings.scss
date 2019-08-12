@@ -291,7 +291,7 @@ $button-background: $hp-cyan;
 $button-background-hover: scale-color($hp-blue, $lightness: -15%);
 $button-background-active: scale-color($hp-blue, $lightness: -10%);
 $button-color: $hp-white;
-$button-color-alt: $hp-blue-light;
+$button-color-alt: $hp-cyan;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -330,7 +330,7 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-blue-light;
+$card-background: $hp-yellow-light;
 $card-hover-background: scale-color($color: $hp-brown-light, $lightness: 10%);
 $card-header-color: $hp-cyan;
 $card-font-color: $hp-black;
@@ -419,7 +419,7 @@ $form-label-color: $hp-blue;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-$select-background: $hp-black;
+$select-background: $hp-blue-light;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $hp-black;
