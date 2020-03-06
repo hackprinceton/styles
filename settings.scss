@@ -1,6 +1,5 @@
 @import 'foundation/util/util';
-@import url('https://fonts.googleapis.com/css?family=Exo+2:300,600');
-@import url('https://use.typekit.net/ffw6yvf.css');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
 // // We use this to set the base for lots of form spacing and positioning styles
 // $form-spacing: rem-calc(20);
@@ -73,13 +72,13 @@ $hp-brown-light: #d3b537;
 $hp-brown: #685507;
 $hp-blue-light: #c5f8fc;
 $hp-cyan: #4cccc9;
-$hp-blue: #03726a;
+$hp-blue: #0046d1;
 
 $hp-green: #59A805;
-$hp-red: #e02222;
+$hp-red: #f06868;
 $hp-yellow: #fffb00;
-$hp-black: #222222;
-$hp-white: #fefefe;
+$hp-black: #000000;
+$hp-white: #ffffff;
 
 
 // {{ 1. Global }}
@@ -92,18 +91,18 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-yellow-light,
+  primary: $hp-blue,
   secondary: $hp-blue-light,
   success: $hp-green,
   warning: $hp-red,
-  alert: $hp-blue,
+  alert: $hp-red,
 );
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-yellow-light;
-$body-font-color: $hp-brown;
-$body-font-family: futura-pt, sans-serif;
+$body-background: $hp-black;
+$body-font-color: darken($hp-white, 15%);
+$body-font-family: 'IBM Plex Sans', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -145,10 +144,10 @@ $block-grid-max: 8;
 // {{ 4. Base Typography }}
 // ------------------------
 
-$header-font-family: alternate-gothic-no-3-d, sans-serif;
+$header-font-family: 'IBM Plex Sans', sans-serif;
 $header-font-weight: normal;
 $header-font-style: normal;
-$font-family-monospace: futura-pt, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: .5rem;
@@ -217,8 +216,8 @@ $abbr-underline: 1px dotted $hp-white;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $hp-cyan;
-$subsubheader-color: $hp-cyan;
+$subheader-color: $hp-white;
+$subsubheader-color: $hp-white;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
@@ -287,7 +286,7 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-border: $hp-blue;
 $button-fill: solid;
-$button-background: $hp-cyan;
+$button-background: scale-color($hp-blue, $lightness: -20%);
 $button-background-hover: scale-color($hp-blue, $lightness: -15%);
 $button-background-active: scale-color($hp-blue, $lightness: -10%);
 $button-color: $hp-white;
@@ -330,10 +329,10 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-yellow-light;
-$card-hover-background: scale-color($color: $hp-brown-light, $lightness: 10%);
-$card-header-color: $hp-cyan;
-$card-font-color: $hp-black;
+$card-background: $hp-blue;
+$card-hover-background: scale-color($color: $hp-blue, $lightness: 20%);
+$card-header-color: $hp-white;
+$card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
 $card-border: 1px solid $light-gray;
 $card-shadow: none;
@@ -415,7 +414,7 @@ $input-prefix-color: $hp-blue;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
-$form-label-color: $hp-blue;
+$form-label-color: $body-font-color;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
@@ -469,7 +468,7 @@ $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $hp-black;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $hp-cyan;
+$menu-item-background-hover: $hp-blue;
 $menu-border: $light-gray;
 
 // {{ 23. Meter }}
@@ -552,7 +551,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-blue-light;
+$reveal-background: $hp-blue;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -594,7 +593,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: $hp-blue-light;
+$table-background: $hp-blue;
 $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
@@ -666,7 +665,7 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-cyan;
+$topbar-background: $hp-blue;
 $topbar-height: rem-calc(60); // custom
 $topbar-submenu-background: $hp-blue-light;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
