@@ -100,11 +100,11 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-orange,
-  secondary: $hp-orange-light,
+  primary: $hp-orange-light,
+  secondary: $hp-orange,
   success: $hp-green,
   warning: $hp-red,
-  alert: $hp-red,
+  alert: $hp-brown,
 );
 $light-gray: #dadada;
 $medium-gray: #cacaca;
@@ -225,7 +225,7 @@ $abbr-underline: 1px dotted $hp-white;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $hp-orange-light;
+$subheader-color: $hp-white;
 $subsubheader-color: $hp-white;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
@@ -560,7 +560,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-orange-dark;
+$reveal-background: $hp-orange;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
