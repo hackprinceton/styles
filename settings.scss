@@ -1,5 +1,4 @@
 @import 'foundation/util/util';
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
@@ -74,13 +73,16 @@ $hp-brown-light: #d3b537;
 $hp-brown: #685507;
 $hp-blue-light: #c5f8fc;
 $hp-cyan: #249EA0;
+$hp-cyan-dark: #008083;
+$hp-cyan-darker: #005F60;
+
 $hp-blue: #0046d1;
 
 
 $hp-green: #005F60;
 $hp-red: #f06868;
 $hp-orange-dark: #FD5901;
-$hp-orange: #f78104;
+$hp-orange: #f78104; 
 $hp-orange-light: #FAAB36;
 $hp-yellow: #fffb00;
 $hp-grey: #3F3F3F;
@@ -188,7 +190,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-cyan, $lightness: -14%);
+$anchor-color: scale-color($hp-brown, $lightness: -14%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -291,7 +293,7 @@ $breadcrumbs-item-slash: true;
 $button-font-family: $body-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
-$button-border: $hp-orange;
+$button-border: $hp-orange-dark;
 $button-fill: solid;
 $button-background: $hp-orange;
 $button-background-hover: scale-color($hp-orange, $lightness: -15%);
