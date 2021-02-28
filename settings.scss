@@ -1,5 +1,6 @@
 @import 'foundation/util/util';
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@import url('https://use.typekit.net/ffw6yvf.css');	
 
 // // We use this to set the base for lots of form spacing and positioning styles
 // $form-spacing: rem-calc(20);
@@ -71,12 +72,20 @@ $hp-yellow-light: #f9e79b;
 $hp-brown-light: #d3b537;
 $hp-brown: #685507;
 $hp-blue-light: #c5f8fc;
-$hp-cyan: #4cccc9;
+$hp-cyan: #249EA0;
+$hp-cyan-dark: #008083;
+$hp-cyan-darker: #005F60;
+
 $hp-blue: #0046d1;
 
-$hp-green: #59A805;
+
+$hp-green: #005F60;
 $hp-red: #f06868;
+$hp-orange-dark: #FD5901;
+$hp-orange: #f78104; 
+$hp-orange-light: #FAAB36;
 $hp-yellow: #fffb00;
+$hp-grey: #3F3F3F;
 $hp-black: #000000;
 $hp-white: #ffffff;
 
@@ -91,8 +100,8 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-blue,
-  secondary: $hp-blue-light,
+  primary: $hp-orange,
+  secondary: $hp-orange-light,
   success: $hp-green,
   warning: $hp-red,
   alert: $hp-red,
@@ -100,9 +109,9 @@ $foundation-palette: (
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-black;
-$body-font-color: darken($hp-white, 15%);
-$body-font-family: 'IBM Plex Sans', sans-serif;
+$body-background: $hp-grey;
+$body-font-color: $hp-white;
+$body-font-family: 'futura-pt', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -144,10 +153,10 @@ $block-grid-max: 8;
 // {{ 4. Base Typography }}
 // ------------------------
 
-$header-font-family: 'IBM Plex Sans', sans-serif;
+$header-font-family: 'Capriola', sans-serif;
 $header-font-weight: normal;
 $header-font-style: normal;
-$font-family-monospace: 'Liberation Mono', Courier, monospace;
+$font-family-monospace: 'futura-pt', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: .5rem;
@@ -181,7 +190,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-cyan, $lightness: -14%);
+$anchor-color: scale-color($hp-brown, $lightness: -14%);
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -216,7 +225,7 @@ $abbr-underline: 1px dotted $hp-white;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $hp-white;
+$subheader-color: $hp-orange-light;
 $subsubheader-color: $hp-white;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
@@ -284,11 +293,11 @@ $breadcrumbs-item-slash: true;
 $button-font-family: $body-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
-$button-border: $hp-blue;
+$button-border: $hp-orange-dark;
 $button-fill: solid;
-$button-background: scale-color($hp-blue, $lightness: -20%);
-$button-background-hover: scale-color($hp-blue, $lightness: -15%);
-$button-background-active: scale-color($hp-blue, $lightness: -10%);
+$button-background: $hp-orange;
+$button-background-hover: scale-color($hp-orange, $lightness: -15%);
+$button-background-active: scale-color($hp-orange, $lightness: -10%);
 $button-color: $hp-white;
 $button-color-alt: $hp-cyan;
 $button-radius: $global-radius;
@@ -302,7 +311,7 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.7;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: $hp-blue-light 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
+$button-transition: $hp-orange-light 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
 
 // {{ 12. Button Group }}
 // ----------------------
@@ -329,9 +338,9 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-blue;
-$card-hover-background: scale-color($color: $hp-blue, $lightness: 20%);
-$card-header-color: $hp-white;
+$card-background: $hp-orange;
+$card-hover-background: scale-color($color: $hp-brown-light, $lightness: 10%);
+$card-header-color: $hp-cyan;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
 $card-border: 1px solid $light-gray;
@@ -407,10 +416,10 @@ $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
 $form-spacing: rem-calc(16);
-$helptext-color: $hp-blue;
+$helptext-color: $hp-orange;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
-$input-prefix-color: $hp-blue;
+$input-prefix-color: $hp-orange;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
@@ -418,7 +427,7 @@ $form-label-color: $body-font-color;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-$select-background: $hp-blue-light;
+$select-background: $hp-orange-light;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $hp-black;
@@ -427,11 +436,11 @@ $input-placeholder-color: $dark-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
-$input-background: scale-color($hp-blue-light, $lightness: -1%);
-$input-background-focus: $hp-blue-light;
+$input-background: scale-color($hp-orange-light, $lightness: -1%);
+$input-background-focus: $hp-orange-light;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $hp-cyan;
-$input-border-focus: 2px solid $hp-cyan;
+$input-border: 1px solid $hp-orange-dark;
+$input-border-focus: 2px solid $hp-orange-dark;
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
@@ -445,8 +454,8 @@ $form-background: #e4e0e0;
 // ---------------
 
 $label-background: $primary-color;
-$label-color: $hp-blue;
-$label-color-alt: $hp-blue-light;
+$label-color: $hp-orange;
+$label-color-alt: $hp-orange-light;
 $label-palette: $foundation-palette;
 $label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
@@ -468,7 +477,7 @@ $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $hp-black;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $hp-blue;
+$menu-item-background-hover: $hp-cyan;
 $menu-border: $light-gray;
 
 // {{ 23. Meter }}
@@ -551,7 +560,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-blue;
+$reveal-background: $hp-orange-dark;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -593,7 +602,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: $hp-blue;
+$table-background: $hp-orange;
 $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
@@ -665,9 +674,9 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-blue;
+$topbar-background: $hp-orange;
 $topbar-height: rem-calc(60); // custom
-$topbar-submenu-background: $hp-blue-light;
+$topbar-submenu-background: $hp-orange-light;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
