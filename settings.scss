@@ -103,7 +103,7 @@ $foundation-palette: (
   secondary: $hp-orange-light,
   success: $hp-green,
   warning: $hp-red,
-  alert: $hp-brown,
+  alert: $hp-grey,
 );
 $light-gray: #dadada;
 $medium-gray: #cacaca;
@@ -189,8 +189,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-brown, $lightness: -14%);
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $hp-cyan;
+$anchor-color-hover: $hp-cyan-dark;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
