@@ -79,13 +79,17 @@ $hp-cyan-darker: #005F60;
 
 $hp-blue: #0046d1;
 
+// new Fall 2021 Colors
+$hp-navy: #233D4D;
+$hp-orange: #FE7F2D;
+$hp-yellow: #FCCA46;
+$hp-green: #A1C181;
+$hp-aqua: #619B8A;
 
 $hp-green: #005F60;
 $hp-red: #f06868;
 $hp-orange-dark: #FD5901;
-$hp-orange: #f78104; 
 $hp-orange-light: #FAAB36;
-$hp-yellow: #fffb00;
 $hp-grey: #3F3F3F;
 $hp-black: #000000;
 $hp-white: #ffffff;
@@ -104,13 +108,13 @@ $foundation-palette: (
   primary: $hp-orange,
   secondary: $hp-orange-light,
   success: $hp-green,
-  warning: $hp-red,
-  alert: $hp-grey,
+  warning: $hp-yellow,
+  alert: $hp-yellow,
 );
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-grey;
+$body-background: $hp-navy;
 $body-font-color: $hp-white;
 $body-font-family: 'Inconsolata', monospace;
 $body-antialiased: true;
@@ -191,8 +195,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $hp-cyan;
-$anchor-color-hover: $hp-cyan-dark;
+$anchor-color: scale-color($hp-navy, $lightness: +15%);;
+$anchor-color-hover: $hp-navy;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -296,9 +300,9 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-border: $hp-orange-dark;
 $button-fill: solid;
-$button-background: $hp-orange-light;
-$button-background-hover: scale-color($hp-orange, $lightness: -15%);
-$button-background-active: scale-color($hp-orange-dark, $lightness: -10%);
+$button-background: $hp-green;
+$button-background-hover: scale-color($hp-green, $lightness: -15%);
+$button-background-active: scale-color($hp-green, $lightness: -10%);
 $button-color: $hp-white;
 $button-color-alt: $hp-cyan;
 $button-radius: $global-radius;
@@ -339,8 +343,8 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-orange;
-$card-hover-background: scale-color($color: $hp-brown-light, $lightness: 10%);
+$card-background: $hp-aqua;
+$card-hover-background: scale-color($color: $hp-green, $lightness: 10%);
 $card-header-color: $hp-cyan;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
@@ -437,11 +441,11 @@ $input-placeholder-color: $dark-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
-$input-background: scale-color($hp-orange-light, $lightness: -1%);
-$input-background-focus: $hp-orange-light;
+$input-background: scale-color($hp-white, $lightness: -1%);
+$input-background-focus: $hp-white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $hp-orange-dark;
-$input-border-focus: 2px solid $hp-orange-dark;
+$input-border: 1px solid $hp-green;
+$input-border-focus: 2px solid $hp-green;
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
@@ -561,7 +565,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-orange;
+$reveal-background: $hp-navy;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -675,9 +679,9 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-orange;
+$topbar-background: $hp-navy;
 $topbar-height: rem-calc(60); // custom
-$topbar-submenu-background: $hp-orange-light;
+$topbar-submenu-background: $hp-navy;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
