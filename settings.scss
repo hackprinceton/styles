@@ -1,6 +1,6 @@
 @import 'foundation/util/util';
 @import url('https://use.typekit.net/fth1nok.css');	
-@import url('https://use.typekit.net/ffw6yvf.css');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 // // We use this to set the base for lots of form spacing and positioning styles
 // $form-spacing: rem-calc(20);
@@ -111,7 +111,7 @@ $medium-gray: #cacaca;
 $dark-gray: #545454;
 $body-background: $hp-grey;
 $body-font-color: $hp-white;
-$body-font-family: 'futura-pt', sans-serif;
+$body-font-family: 'Inconsolata', monospace;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -156,7 +156,7 @@ $block-grid-max: 8;
 $header-font-family: 'courier-std', sans-serif;
 $header-font-weight: normal;
 $header-font-style: normal;
-$font-family-monospace: 'futura-pt', Courier, monospace;
+$font-family-monospace: 'Inconsolata', monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: .5rem;
