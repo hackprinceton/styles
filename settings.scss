@@ -67,32 +67,28 @@
 // Colors here are copied into $foundation-palette and are thus
 // accessible through get-color(color-name)
 
-// Fall 2019 Colors
-// Defined in order of design guidelines
-$hp-yellow-light: #f9e79b;
-$hp-brown-light: #d3b537;
-$hp-brown: #685507;
-$hp-blue-light: #c5f8fc;
-$hp-cyan: #249EA0;
-$hp-cyan-dark: #008083;
-$hp-cyan-darker: #005F60;
-
 $hp-blue: #0046d1;
 
-// new Fall 2021 Colors
-$hp-navy: #233D4D;
+// S22 Colors
+$hp-maroon: #372137;
+$hp-white: #f9f3e0;
+$hp-pink: #e19088;
+$hp-blue: #a6c6d7;
+$hp-gray: #c0aab1;
+$hp-purple: #6b3b6c;
+$hp-purple2: #a16a98;
+
+// standard/previous colors
 $hp-orange: #FE7F2D;
 $hp-yellow: #FCCA46;
 $hp-green: #A1C181;
 $hp-aqua: #619B8A;
-
+$hp-cyan: #249EA0;
+$hp-blue-light: #c5f8fc;
 $hp-green: #005F60;
 $hp-red: #f06868;
-$hp-orange-dark: #FD5901;
-$hp-orange-light: #FAAB36;
 $hp-grey: #3F3F3F;
 $hp-black: #000000;
-$hp-white: #ffffff;
 
 
 // {{ 1. Global }}
@@ -105,8 +101,8 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-orange,
-  secondary: $hp-orange-light,
+  primary: $hp-purple,
+  secondary: $hp-purple2,
   success: $hp-green,
   warning: $hp-yellow,
   alert: $hp-yellow,
@@ -114,7 +110,7 @@ $foundation-palette: (
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-navy;
+$body-background: $hp-maroon;
 $body-font-color: $hp-white;
 $body-font-family: 'alegreya-sans', sans-serif;
 $body-antialiased: true;
@@ -195,8 +191,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: scale-color($hp-navy, $lightness: +15%);;
-$anchor-color-hover: $hp-navy;
+$anchor-color: $hp-blue;
+$anchor-color-hover: scale-color($hp-blue, $lightness: +15%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -211,7 +207,7 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $dark-gray;
+$blockquote-color: $hp-blue; // for some form links
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
 $cite-font-size: rem-calc(13);
@@ -298,13 +294,13 @@ $breadcrumbs-item-slash: true;
 $button-font-family: $body-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
-$button-border: $hp-orange-dark;
+$button-border: $hp-white;
 $button-fill: solid;
-$button-background: $hp-green;
-$button-background-hover: scale-color($hp-green, $lightness: -15%);
-$button-background-active: scale-color($hp-green, $lightness: -10%);
+$button-background: $hp-purple;
+$button-background-hover: scale-color($hp-purple, $lightness: +15%);
+$button-background-active: scale-color($hp-purple, $lightness: +10%);
 $button-color: $hp-white;
-$button-color-alt: $hp-cyan;
+$button-color-alt: $hp-pink;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -316,7 +312,7 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.7;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: $hp-orange-light 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
+$button-transition: $hp-pink 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
 
 // {{ 12. Button Group }}
 // ----------------------
@@ -343,12 +339,12 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-aqua;
-$card-hover-background: scale-color($color: $hp-green, $lightness: 10%);
-$card-header-color: $hp-cyan;
+$card-background: $hp-purple;
+$card-hover-background: scale-color($color: $hp-purple, $lightness: 10%);
+$card-header-color: $hp-pink;
 $card-font-color: $body-font-color;
-$card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+$card-divider-background: $hp-white;
+$card-border: 1px solid $hp-white;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
@@ -381,7 +377,7 @@ $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
-$drilldown-background: $hp-cyan;
+$drilldown-background: $hp-pink;
 
 // {{ 17. Dropdown }}
 // ------------------
@@ -421,10 +417,10 @@ $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
 $form-spacing: rem-calc(16);
-$helptext-color: $hp-orange;
+$helptext-color: $hp-white;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
-$input-prefix-color: $hp-orange;
+$input-prefix-color: $hp-white;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
@@ -432,7 +428,7 @@ $form-label-color: $body-font-color;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-$select-background: $hp-orange-light;
+$select-background: $hp-white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $hp-black;
@@ -444,8 +440,8 @@ $input-font-weight: $global-weight-normal;
 $input-background: scale-color($hp-white, $lightness: -1%);
 $input-background-focus: $hp-white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $hp-green;
-$input-border-focus: 2px solid $hp-green;
+$input-border: 1px solid $hp-blue;
+$input-border-focus: 2px solid $hp-blue;
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
@@ -459,8 +455,8 @@ $form-background: #e4e0e0;
 // ---------------
 
 $label-background: $primary-color;
-$label-color: $hp-orange;
-$label-color-alt: $hp-orange-light;
+$label-color: $hp-blue;
+$label-color-alt: $hp-pink;
 $label-palette: $foundation-palette;
 $label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
@@ -565,7 +561,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-navy;
+$reveal-background: $hp-maroon;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -607,7 +603,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: $hp-orange;
+$table-background: scale-color($color: $hp-purple2, $lightness: -10%);
 $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
@@ -679,9 +675,9 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-navy;
+$topbar-background: $hp-maroon;
 $topbar-height: rem-calc(60); // custom
-$topbar-submenu-background: $hp-navy;
+$topbar-submenu-background: $hp-maroon;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
