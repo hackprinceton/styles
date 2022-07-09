@@ -69,6 +69,13 @@
 
 $hp-blue: #0046d1;
 
+// F23 Colors
+$hp-orange2: #f79256;
+$hp-orange-light: #fbd1a2;
+$hp-turquoise: #7dcfb6;
+$hp-blue-light: #00b2ca;
+$hp-navy: #1d4e89;
+
 // S22 Colors
 $hp-maroon: #372137;
 $hp-white: #f9f3e0;
@@ -101,8 +108,8 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-purple,
-  secondary: $hp-purple2,
+  primary: $hp-orange2,
+  secondary: $hp-orange-light,
   success: $hp-green,
   warning: $hp-yellow,
   alert: $hp-yellow,
@@ -110,7 +117,7 @@ $foundation-palette: (
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-maroon;
+$body-background: $hp-navy;
 $body-font-color: $hp-white;
 $body-font-family: 'alegreya-sans', sans-serif;
 $body-antialiased: true;
