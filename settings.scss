@@ -75,6 +75,7 @@ $hp-orange-light: #fbd1a2;
 $hp-turquoise: #7dcfb6;
 $hp-blue-light: #00b2ca;
 $hp-navy: #1d4e89;
+$hp-navy2: #4282d0;
 
 // S22 Colors
 $hp-maroon: #372137;
@@ -117,7 +118,7 @@ $foundation-palette: (
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-orange-light;
+$body-background: $hp-navy;
 $body-font-color: $hp-white;
 $body-font-family: 'alegreya-sans', sans-serif;
 $body-antialiased: true;
@@ -303,11 +304,11 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-border: $hp-white;
 $button-fill: solid;
-$button-background: $hp-purple;
-$button-background-hover: scale-color($hp-purple, $lightness: +15%);
-$button-background-active: scale-color($hp-purple, $lightness: +10%);
+$button-background: $hp-navy2;
+$button-background-hover: scale-color($hp-navy2, $lightness: +15%);
+$button-background-active: scale-color($hp-navy2, $lightness: +10%);
 $button-color: $hp-white;
-$button-color-alt: $hp-pink;
+$button-color-alt: $hp-navy;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -346,9 +347,9 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-purple;
-$card-hover-background: scale-color($color: $hp-purple, $lightness: 10%);
-$card-header-color: $hp-pink;
+$card-background: $hp-navy2;
+$card-hover-background: scale-color($color: $hp-navy2, $lightness: 10%);
+$card-header-color: $hp-navy;
 $card-font-color: $body-font-color;
 $card-divider-background: $hp-white;
 $card-border: 1px solid $hp-white;
@@ -384,7 +385,7 @@ $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
-$drilldown-background: $hp-pink;
+$drilldown-background: $hp-navy;
 
 // {{ 17. Dropdown }}
 // ------------------
@@ -463,7 +464,7 @@ $form-background: #e4e0e0;
 
 $label-background: $primary-color;
 $label-color: $hp-blue;
-$label-color-alt: $hp-pink;
+$label-color-alt: $hp-navy;
 $label-palette: $foundation-palette;
 $label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
@@ -568,7 +569,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-maroon;
+$reveal-background: $hp-navy;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -610,7 +611,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: scale-color($color: $hp-purple2, $lightness: -10%);
+$table-background: scale-color($color: $hp-navy2, $lightness: -10%);
 $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
@@ -682,9 +683,9 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-maroon;
+$topbar-background: $hp-navy;
 $topbar-height: rem-calc(60); // custom
-$topbar-submenu-background: $hp-maroon;
+$topbar-submenu-background: $hp-navy;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
