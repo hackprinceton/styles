@@ -71,19 +71,19 @@ $hp-blue: #0046d1;
 
 // S23 Colors
 
-$hp-purple-dark: #431F4F;
-$hp-pink: #CD5B7E;
-$hp-orange: #DA9248 !important;
-$hp-blue-dark: #5A6BC3;
-$hp-blue-light: #8097E8 !important;
+$hp-purple-dark: #431F4F; //use for background
+$hp-pink: #CD5B7E; //use for foreground
+$hp-orange3: #DA9248 ; //not used
+$hp-blue-dark: #5A6BC3; //foundation palette, primary
+$hp-blue-light2: #8097E8 ; //foundation palette, secondary
 
 // F23 Colors
-$hp-orange2: #f79256;
-$hp-orange-light: #fbd1a2;
-$hp-turquoise: #7dcfb6;
-$hp-blue-light: #00b2ca;
-$hp-navy: #1d4e89;
-$hp-navy2: #4282d0;
+$hp-orange2: #f79256; //only used in foundation palette, primary
+$hp-orange-light: #fbd1a2; //only used in foundation palette, secondary
+$hp-turquoise: #7dcfb6; //not used
+$hp-blue-light: #00b2ca; //not used
+$hp-navy: #1d4e89; //used throughout for background
+$hp-navy2: #4282d0; //use throughout for foreground
 
 // S22 Colors
 $hp-maroon: #372137;
@@ -126,7 +126,7 @@ $foundation-palette: (
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-navy;
+$body-background: $hp-purple-dark;
 $body-font-color: $hp-white;
 $body-font-family: 'alegreya-sans', sans-serif;
 $body-antialiased: true;
@@ -312,11 +312,11 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-border: $hp-white;
 $button-fill: solid;
-$button-background: $hp-navy2;
-$button-background-hover: scale-color($hp-navy2, $lightness: +15%);
-$button-background-active: scale-color($hp-navy2, $lightness: +10%);
+$button-background: $hp-pink;
+$button-background-hover: scale-color($hp-pink, $lightness: +15%);
+$button-background-active: scale-color($hp-pink, $lightness: +10%);
 $button-color: $hp-white;
-$button-color-alt: $hp-navy;
+$button-color-alt: $hp-purple-dark;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -355,9 +355,9 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-navy2;
-$card-hover-background: scale-color($color: $hp-navy2, $lightness: 10%);
-$card-header-color: $hp-navy;
+$card-background: $hp-pink;
+$card-hover-background: scale-color($color: $hp-pink, $lightness: 10%);
+$card-header-color: $hp-purple-dark;
 $card-font-color: $body-font-color;
 $card-divider-background: $hp-white;
 $card-border: 1px solid $hp-white;
@@ -393,7 +393,7 @@ $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
-$drilldown-background: $hp-navy;
+$drilldown-background: $hp-purple-dark;
 
 // {{ 17. Dropdown }}
 // ------------------
@@ -472,7 +472,7 @@ $form-background: #e4e0e0;
 
 $label-background: $primary-color;
 $label-color: $hp-blue;
-$label-color-alt: $hp-navy;
+$label-color-alt: $hp-purple-dark;
 $label-palette: $foundation-palette;
 $label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
@@ -577,7 +577,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-navy;
+$reveal-background: $hp-purple-dark;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -619,7 +619,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: scale-color($color: $hp-navy2, $lightness: -10%);
+$table-background: scale-color($color: $hp-pink, $lightness: -10%);
 $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
@@ -691,9 +691,9 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-navy;
+$topbar-background: $hp-purple-dark;
 $topbar-height: rem-calc(60); // custom
-$topbar-submenu-background: $hp-navy;
+$topbar-submenu-background: $hp-purple-dark;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
