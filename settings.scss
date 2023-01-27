@@ -67,7 +67,7 @@
 // Colors here are copied into $foundation-palette and are thus
 // accessible through get-color(color-name)
 
-$hp-blue: #0046d1;
+$hp-blue: #0046d1 !important;
 
 // S23 Colors
 
@@ -77,7 +77,7 @@ $hp-orange3: #DA9248 ; //not used
 $hp-blue-dark: #5A6BC3; //foundation palette, primary
 $hp-blue-light2: #8097E8 ; //foundation palette, secondary
 
-/*
+
 // F22 Colors
 $hp-orange2: #f79256; //only used in foundation palette, primary
 $hp-orange-light: #fbd1a2; //only used in foundation palette, secondary
@@ -94,7 +94,7 @@ $hp-blue: #a6c6d7;
 $hp-gray: #c0aab1;
 $hp-purple: #6b3b6c;
 $hp-purple2: #a16a98;
-*/
+
 
 // standard/previous colors
 $hp-orange: #FE7F2D;
