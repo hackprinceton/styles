@@ -68,32 +68,46 @@
 // accessible through get-color(color-name)
 
 //$hp-blue: #0046d1;
+// F23 Colors
+// naming convention that hopefully doesn't require variable replacement; not perfect
+$hp-background: #321B06; // dark brown
+$hp-foreground: #fff8dc; // cream
+$hp-primary: #9f5708;
+$hp-secondary: #ca7340;
+$hp-accent1: #fff8dc; // cream 
+
+// #9f5708;
+// #ca7340;
+// #e9ca7c;
+
+// #fff8dc;
+
 // S23 Colors
 
-$hp-purple-dark: #431F4F; //use for background
-$hp-pink: #CD5B7E; //use for foreground
-$hp-orange3: #DA9248 ; //not used
-$hp-blue-dark: #5A6BC3; //foundation palette, primary
-$hp-blue-light2: #8097E8 ; //foundation palette, secondary
-$hp-blue: $hp-blue-dark;
-$hp-grey-light: #b5b5b5;
+// $hp-purple-dark: #431F4F; //use for background
+// $hp-pink: #CD5B7E; //use for foreground
+// $hp-orange3: #DA9248 ; //not used
+// $hp-blue-dark: #5A6BC3; //foundation palette, primary
+// $hp-blue-light2: #8097E8 ; //foundation palette, secondary
+// $hp-blue: $hp-blue-dark;
+// $hp-grey-light: #b5b5b5;
 
-// F22 Colors
-$hp-orange2: #f79256; //only used in foundation palette, primary
-$hp-orange-light: #fbd1a2; //only used in foundation palette, secondary
-$hp-turquoise: #7dcfb6; //not used
-$hp-blue-light: #00b2ca; //not used
-$hp-navy: #1d4e89; //used throughout for background
-$hp-navy2: #4282d0; //use throughout for foreground
+// // F22 Colors
+// $hp-orange2: #f79256; //only used in foundation palette, primary
+// $hp-orange-light: #fbd1a2; //only used in foundation palette, secondary
+// $hp-turquoise: #7dcfb6; //not used
+// $hp-blue-light: #00b2ca; //not used
+// $hp-navy: #1d4e89; //used throughout for background
+// $hp-navy2: #4282d0; //use throughout for foreground
 
-// S22 Colors
-$hp-maroon: #372137;
-$hp-white: #f9f3e0;
-$hp-pink: #e19088;
-//$hp-blue: #a6c6d7;
-$hp-gray: #c0aab1;
-$hp-purple: #6b3b6c;
-$hp-purple2: #a16a98;
+// // S22 Colors
+// $hp-maroon: #372137;
+// $hp-white: #f9f3e0;
+// $hp-pink: #e19088;
+// //$hp-blue: #a6c6d7;
+// $hp-gray: #c0aab1;
+// $hp-purple: #6b3b6c;
+// $hp-purple2: #a16a98;
 
 
 // standard/previous colors
@@ -106,7 +120,10 @@ $hp-blue-light: #c5f8fc;
 $hp-green: #005F60;
 $hp-red: #f06868;
 $hp-grey: #3F3F3F;
-$hp-black: #000000;
+$hp-black: #fff8dc;
+$hp-white: #321B06;
+// $hp-white: #f9f3e0;
+$hp-grey-light: #b5b5b5;
 
 
 // {{ 1. Global }}
@@ -119,8 +136,8 @@ $global-font-size: 87.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $hp-blue-dark,
-  secondary: $hp-blue-light2,
+  primary: $hp-primary,
+  secondary: $hp-secondary,
   success: $hp-green,
   warning: $hp-yellow,
   alert: red,
@@ -128,7 +145,7 @@ $foundation-palette: (
 $light-gray: #dadada;
 $medium-gray: #cacaca;
 $dark-gray: #545454;
-$body-background: $hp-purple-dark;
+$body-background: $hp-background;
 $body-font-color: $hp-white;
 $body-font-family: 'alegreya-sans', sans-serif;
 $body-antialiased: true;
@@ -154,6 +171,13 @@ $breakpoints: (
   xlarge: 1200px,
   xxlarge: 1440px,
 );
+$breakpoints-hidpi: (
+  "hidpi-1": 1,
+  "hidpi-1-5": 1.5,
+  "hidpi-2": 2,
+  "retina": 2,
+  "hidpi-3": 3
+);
 $print-breakpoint: large;
 $breakpoint-classes: (small medium large);
 
@@ -162,11 +186,13 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: (
-  small: 45px,
-  medium: 30px,
-);
+$grid-column-gutter: 30px;
+// $grid-column-gutter: (
+//   small: 20px,
+//   medium: 30px,
+// );
 $grid-column-align-edge: true;
+$grid-column-alias: 'columns';
 $block-grid-max: 8;
 
 // {{ 4. Base Typography }}
@@ -314,11 +340,11 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-border: $hp-white;
 $button-fill: solid;
-$button-background: $hp-pink;
-$button-background-hover: scale-color($hp-pink, $lightness: +15%);
-$button-background-active: scale-color($hp-pink, $lightness: +10%);
+$button-background: $hp-foreground;
+$button-background-hover: scale-color($hp-foreground, $lightness: +15%);
+$button-background-active: scale-color($hp-foreground, $lightness: +10%);
 $button-color: $hp-white;
-$button-color-alt: $hp-purple-dark;
+$button-color-alt: $hp-background;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -330,7 +356,7 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.7;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: $hp-pink 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
+$button-transition: $hp-foreground 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
 
 // {{ 12. Button Group }}
 // ----------------------
@@ -357,9 +383,9 @@ $callout-link-tint: 30%;
 // {{ 14. Card }}
 // --------------
 
-$card-background: $hp-pink;
-$card-hover-background: scale-color($color: $hp-pink, $lightness: 10%);
-$card-header-color: $hp-purple-dark;
+$card-background: $hp-foreground;
+$card-hover-background: scale-color($color: $hp-foreground, $lightness: 10%);
+$card-header-color: $hp-background;
 $card-font-color: $body-font-color;
 $card-divider-background: $hp-white;
 $card-border: 1px solid $hp-white;
@@ -395,7 +421,7 @@ $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
-$drilldown-background: $hp-purple-dark;
+$drilldown-background: $hp-background;
 
 // {{ 17. Dropdown }}
 // ------------------
@@ -474,7 +500,7 @@ $form-background: #e4e0e0;
 
 $label-background: $primary-color;
 $label-color: $hp-black;
-$label-color-alt: $hp-purple-dark;
+$label-color-alt: $hp-background;
 $label-palette: $foundation-palette;
 $label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
@@ -579,7 +605,7 @@ $responsive-embed-ratios: (
 // {{ 29. Reveal }}
 // ----------------
 
-$reveal-background: $hp-purple-dark;
+$reveal-background: $hp-background;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -621,7 +647,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: scale-color($color: $hp-pink, $lightness: -10%);
+$table-background: scale-color($color: $hp-foreground, $lightness: -10%);
 $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
@@ -693,10 +719,26 @@ $tooltip-radius: $global-radius;
 // -----------------
 
 $topbar-padding: .5rem;
-$topbar-background: $hp-purple-dark;
+$topbar-background: $hp-background;
 $topbar-height: rem-calc(60); // custom
-$topbar-submenu-background: $hp-purple-dark;
+$topbar-submenu-background: $hp-background;
 $topbar-title-spacing: .5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
 $topbar-font-family: $body-font-family;
+
+// we're so behind
+// 56. Xy Grid
+// -----------
+
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+$grid-margin-gutters: (
+  "small": 20px,
+  "medium": 30px
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;
