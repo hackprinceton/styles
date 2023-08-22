@@ -120,6 +120,7 @@ $hp-blue-light: #c5f8fc;
 $hp-green: #005F60;
 $hp-red: #f06868;
 $hp-grey: #3F3F3F;
+// swapped because i didn't want to change var names
 $hp-black: #fff8dc;
 $hp-white: #321B06;
 // $hp-white: #f9f3e0;
@@ -442,7 +443,7 @@ $dropdown-sizes: (
 // -----------------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $hp-cyan;
+$dropdownmenu-arrow-color: $hp-secondary;
 $dropdownmenu-arrow-padding: 1.75rem;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
@@ -522,7 +523,7 @@ $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $hp-black;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $hp-cyan;
+$menu-item-background-hover: $hp-secondary;
 $menu-border: $light-gray;
 
 // {{ 23. Meter }}
@@ -647,7 +648,8 @@ $switch-paddle-transition: all 0.25s ease-out;
 // {{ 32. Table }}
 // ---------------
 
-$table-background: scale-color($color: $hp-foreground, $lightness: -10%);
+// $table-background: scale-color($color: $hp-foreground, $lightness: -10%);
+$table-background: $hp-foreground;
 $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
@@ -673,7 +675,7 @@ $tab-color: $primary-color;
 $tab-background-active: $light-gray;
 $tab-active-color: $primary-color;
 $tab-item-font-size: rem-calc(12);
-$tab-item-background-hover: $hp-cyan;
+$tab-item-background-hover: $hp-secondary;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $hp-white;
