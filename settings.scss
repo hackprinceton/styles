@@ -1,7 +1,6 @@
-@import 'foundation/util/util';
-@import url('https://use.typekit.net/qru0kod.css');	
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-
+@import "foundation/util/util";
+@import url("https://use.typekit.net/qru0kod.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
 // // We use this to set the base for lots of form spacing and positioning styles
 // $form-spacing: rem-calc(20);
@@ -70,11 +69,11 @@
 //$hp-blue: #0046d1;
 // F23 Colors
 // naming convention that hopefully doesn't require variable replacement; not perfect
-$hp-background: #321B06; // dark brown
+$hp-background: blue; // #321B06; // dark brown
 $hp-foreground: #fff8dc; // cream
 $hp-primary: #9f5708;
 $hp-secondary: #ca7340;
-$hp-accent1: #fff8dc; // cream 
+$hp-accent1: #fff8dc; // cream
 
 // #9f5708;
 // #ca7340;
@@ -109,23 +108,21 @@ $hp-accent1: #fff8dc; // cream
 // $hp-purple: #6b3b6c;
 // $hp-purple2: #a16a98;
 
-
 // standard/previous colors
-$hp-orange: #FE7F2D;
-$hp-yellow: #FCCA46;
-$hp-green: #A1C181;
-$hp-aqua: #619B8A;
-$hp-cyan: #249EA0;
+$hp-orange: #fe7f2d;
+$hp-yellow: #fcca46;
+$hp-green: #a1c181;
+$hp-aqua: #619b8a;
+$hp-cyan: #249ea0;
 $hp-blue-light: #c5f8fc;
-$hp-green: #005F60;
+$hp-green: #005f60;
 $hp-red: #f06868;
-$hp-grey: #3F3F3F;
+$hp-grey: #3f3f3f;
 // swapped because i didn't want to change var names
 $hp-black: #fff8dc;
-$hp-white: #321B06;
+$hp-white: #321b06;
 // $hp-white: #f9f3e0;
 $hp-grey-light: #b5b5b5;
-
 
 // {{ 1. Global }}
 // ---------------
@@ -148,7 +145,7 @@ $medium-gray: #cacaca;
 $dark-gray: #545454;
 $body-background: $hp-background;
 $body-font-color: $hp-white;
-$body-font-family: 'alegreya-sans', sans-serif;
+$body-font-family: "alegreya-sans", sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -177,7 +174,7 @@ $breakpoints-hidpi: (
   "hidpi-1-5": 1.5,
   "hidpi-2": 2,
   "retina": 2,
-  "hidpi-3": 3
+  "hidpi-3": 3,
 );
 $print-breakpoint: large;
 $breakpoint-classes: (small medium large);
@@ -193,35 +190,59 @@ $grid-column-gutter: 30px;
 //   medium: 30px,
 // );
 $grid-column-align-edge: true;
-$grid-column-alias: 'columns';
+$grid-column-alias: "columns";
 $block-grid-max: 8;
 
 // {{ 4. Base Typography }}
 // ------------------------
 
-$header-font-family: 'alegreya-sans', sans-serif;
+$header-font-family: "alegreya-sans", sans-serif;
 $header-font-weight: normal;
 $header-font-style: normal;
-$font-family-monospace: 'Inconsolata', monospace;
+$font-family-monospace: "Inconsolata", monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
-$header-margin-bottom: .5rem;
+$header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    "h1": (
+      "font-size": 24,
+    ),
+    "h2": (
+      "font-size": 20,
+    ),
+    "h3": (
+      "font-size": 19,
+    ),
+    "h4": (
+      "font-size": 18,
+    ),
+    "h5": (
+      "font-size": 17,
+    ),
+    "h6": (
+      "font-size": 16,
+    ),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    "h1": (
+      "font-size": 48,
+    ),
+    "h2": (
+      "font-size": 40,
+    ),
+    "h3": (
+      "font-size": 31,
+    ),
+    "h4": (
+      "font-size": 25,
+    ),
+    "h5": (
+      "font-size": 20,
+    ),
+    "h6": (
+      "font-size": 16,
+    ),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -257,7 +278,7 @@ $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
 $cite-font-size: rem-calc(13);
 $cite-color: $dark-gray;
-$cite-pseudo-content: '\2014 \0020';
+$cite-pseudo-content: "\2014 \0020";
 $keystroke-font: $font-family-monospace;
 $keystroke-color: $hp-white;
 $keystroke-background: $light-gray;
@@ -357,14 +378,15 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.7;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: $hp-foreground 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
+$button-transition: $hp-foreground 0.25s ease-out, color 0.25s ease-out,
+  opacity 0.25s ease-out;
 
 // {{ 12. Button Group }}
 // ----------------------
 
 $buttongroup-margin: 1rem;
 $buttongroup-spacing: 1px;
-$buttongroup-child-selector: '.button';
+$buttongroup-child-selector: ".button";
 $buttongroup-expand-max: 6;
 $buttongroup-radius-on-each: true;
 
@@ -385,7 +407,10 @@ $callout-link-tint: 30%;
 // --------------
 
 $card-background: $hp-foreground;
-$card-hover-background: scale-color($color: $hp-foreground, $lightness: 10%);
+$card-hover-background: scale-color(
+  $color: $hp-foreground,
+  $lightness: 10%,
+);
 $card-header-color: $hp-background;
 $card-font-color: $body-font-color;
 $card-divider-background: $hp-white;
@@ -550,7 +575,7 @@ $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($hp-black, 0.25);
-$maincontent-class: 'off-canvas-content';
+$maincontent-class: "off-canvas-content";
 
 // {{ 25. Orbit }}
 // ---------------
@@ -654,7 +679,10 @@ $table-color-scale: 5%;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
-$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
+$table-row-stripe-hover: darken(
+  $table-background,
+  $table-color-scale + $table-hover-scale
+);
 $table-is-striped: true;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
@@ -720,11 +748,11 @@ $tooltip-radius: $global-radius;
 // {{ 37. Top Bar }}
 // -----------------
 
-$topbar-padding: .5rem;
+$topbar-padding: 0.5rem;
 $topbar-background: $hp-background;
 $topbar-height: rem-calc(60); // custom
 $topbar-submenu-background: $hp-background;
-$topbar-title-spacing: .5rem 1rem 0.5rem 0;
+$topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
 $topbar-font-family: $body-font-family;
@@ -738,7 +766,7 @@ $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
   "small": 20px,
-  "medium": 30px
+  "medium": 30px,
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
