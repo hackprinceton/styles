@@ -126,8 +126,8 @@ $hp-green: #005f60;
 $hp-red: #f06868;
 $hp-grey: #3f3f3f;
 // swapped because i didn't want to change var names
-$hp-black: #fff8dc;
-$hp-white: #321b06;
+$hp-black: #321b06;
+$hp-white: #fff8dc;
 // $hp-white: #f9f3e0;
 $hp-grey-light: #b5b5b5;
 
@@ -355,7 +355,7 @@ $badge-font-size: 0.6rem;
 $breadcrumbs-margin: 0 0 $global-margin 0;
 $breadcrumbs-item-font-size: rem-calc(11);
 $breadcrumbs-item-color: $primary-color;
-$breadcrumbs-item-color-current: $hp-white;
+$breadcrumbs-item-color-current: $hp-background;
 $breadcrumbs-item-color-disabled: $medium-gray;
 $breadcrumbs-item-margin: 0.75rem;
 $breadcrumbs-item-uppercase: true;
@@ -480,7 +480,7 @@ $dropdownmenu-arrow-padding: 1.75rem;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-nested-margin: 0;
-$dropdownmenu-background: $hp-black;
+$dropdownmenu-background: $hp-background;
 $dropdownmenu-border: 1px solid $medium-gray;
 $dropdownmenu-submenu-background: $dropdownmenu-background;
 $dropdown-menu-item-color-active: get-color(primary);
