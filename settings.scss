@@ -67,13 +67,20 @@
 // accessible through get-color(color-name)
 
 //$hp-blue: #0046d1;
+// S24 Colors
+$hp-background: #539201; // Darker Green
+$hp-foreground: #fefcd3; // Tan
+$hp-primary: #75c203; // Green
+$hp-secondary: #baf24e; // Lighter green
+$hp-accent1: #fefcd3; // Tan
+
 // F23 Colors
 // naming convention that hopefully doesn't require variable replacement; not perfect
-$hp-background: #321b06; // dark brown
-$hp-foreground: #fff8dc; // cream
-$hp-primary: #9f5708;
-$hp-secondary: #ca7340;
-$hp-accent1: #fff8dc; // cream
+// $hp-background: #321b06; // dark brown
+// $hp-foreground: #fff8dc; // cream
+// $hp-primary: #9f5708;
+// $hp-secondary: #ca7340;
+// $hp-accent1: #fff8dc; // cream
 
 // #9f5708;
 // #ca7340;
